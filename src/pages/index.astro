@@ -1,0 +1,31 @@
+---
+import Button from "../components/button.astro";
+import Input from "../components/input.astro";
+import Textarea from "../components/textarea.astro";
+import Separator from "../components/separator.astro";
+import Select from "../components/select.astro";
+import "../globals.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
+    <body class="bg-background text-foreground">
+        <h1>Astro Components</h1>
+        <Button variant="outline">Hola</Button>
+        <Input placeholder={"hello world"} />
+        <Textarea placeholder={"type here ..."} />
+        <Separator orientation="horizontal" />
+        <Select>
+            <option value="0">Select one:</option>
+            <option value="1">a</option>
+            <option value="2">b</option>
+            <option value="3">c</option>
+        </Select>
+    </body>
+</html>
